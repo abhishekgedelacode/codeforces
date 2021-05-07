@@ -7,4 +7,5 @@ int main()
     scanf("%s", a);
     scanf("%s", b);
     printf("%d\n", strcmpi(a, b));
+    return 0;
 }

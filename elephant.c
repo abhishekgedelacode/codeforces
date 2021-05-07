@@ -7,4 +7,5 @@ int main()
         printf("%d\n", x / 5);
     else
         printf("%d\n", x / 5 + 1);
+    return 0;
 }
