@@ -2,14 +2,15 @@
 
 int main()
 {
-    int n, t, i;
+    int n, t, i, j;
     char ch, q[50];
     scanf("%d%d", &n, &t);
     scanf("%s", q);
     for (i = 1; i < t; i++)
     {
         ch = q[0];
-        q[0] = q[n - 1];
+        for (j = 0; j < n - 1; j++)
+            q[j] = q[j + 1];
         q[n - 1] = ch;
     }
     for (i = 0; q[i + 1] != '\0'; i++)
